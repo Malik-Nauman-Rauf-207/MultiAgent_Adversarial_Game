@@ -12,3 +12,11 @@ A Python implementation of a Minimax Q-Learning algorithm in a zero-sum game env
 Install the required Python packages:
 ```bash
 pip install numpy matplotlib pulp
+
+## Usage
+from zero_sum_gridworld import ZeroSumGridWorld
+
+env = ZeroSumGridWorld(grid_size=4)
+env.train(num_episodes=10000)
+env.visualize_trajectory()
+
